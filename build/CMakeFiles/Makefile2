@@ -81,12 +81,12 @@ clean: CMakeFiles/Dev.dir/clean
 CMakeFiles/Dev.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=1,2 "Built target Dev"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Dev"
 .PHONY : CMakeFiles/Dev.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Dev.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Dev.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 0
 .PHONY : CMakeFiles/Dev.dir/rule

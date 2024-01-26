@@ -69,10 +69,52 @@ include CMakeFiles/Dev.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Dev.dir/flags.make
 
+CMakeFiles/Dev.dir/input.c.obj: CMakeFiles/Dev.dir/flags.make
+CMakeFiles/Dev.dir/input.c.obj: /home/nils/github/psp/input.c
+CMakeFiles/Dev.dir/input.c.obj: CMakeFiles/Dev.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Dev.dir/input.c.obj"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Dev.dir/input.c.obj -MF CMakeFiles/Dev.dir/input.c.obj.d -o CMakeFiles/Dev.dir/input.c.obj -c /home/nils/github/psp/input.c
+
+CMakeFiles/Dev.dir/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Dev.dir/input.c.i"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nils/github/psp/input.c > CMakeFiles/Dev.dir/input.c.i
+
+CMakeFiles/Dev.dir/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Dev.dir/input.c.s"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nils/github/psp/input.c -o CMakeFiles/Dev.dir/input.c.s
+
+CMakeFiles/Dev.dir/render.c.obj: CMakeFiles/Dev.dir/flags.make
+CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/render.c
+CMakeFiles/Dev.dir/render.c.obj: CMakeFiles/Dev.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Dev.dir/render.c.obj"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Dev.dir/render.c.obj -MF CMakeFiles/Dev.dir/render.c.obj.d -o CMakeFiles/Dev.dir/render.c.obj -c /home/nils/github/psp/render.c
+
+CMakeFiles/Dev.dir/render.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Dev.dir/render.c.i"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nils/github/psp/render.c > CMakeFiles/Dev.dir/render.c.i
+
+CMakeFiles/Dev.dir/render.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Dev.dir/render.c.s"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nils/github/psp/render.c -o CMakeFiles/Dev.dir/render.c.s
+
+CMakeFiles/Dev.dir/player.c.obj: CMakeFiles/Dev.dir/flags.make
+CMakeFiles/Dev.dir/player.c.obj: /home/nils/github/psp/player.c
+CMakeFiles/Dev.dir/player.c.obj: CMakeFiles/Dev.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Dev.dir/player.c.obj"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Dev.dir/player.c.obj -MF CMakeFiles/Dev.dir/player.c.obj.d -o CMakeFiles/Dev.dir/player.c.obj -c /home/nils/github/psp/player.c
+
+CMakeFiles/Dev.dir/player.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Dev.dir/player.c.i"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nils/github/psp/player.c > CMakeFiles/Dev.dir/player.c.i
+
+CMakeFiles/Dev.dir/player.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Dev.dir/player.c.s"
+	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nils/github/psp/player.c -o CMakeFiles/Dev.dir/player.c.s
+
 CMakeFiles/Dev.dir/main.c.obj: CMakeFiles/Dev.dir/flags.make
 CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/main.c
 CMakeFiles/Dev.dir/main.c.obj: CMakeFiles/Dev.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Dev.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Dev.dir/main.c.obj"
 	/home/nils/pspdev/bin/psp-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Dev.dir/main.c.obj -MF CMakeFiles/Dev.dir/main.c.obj.d -o CMakeFiles/Dev.dir/main.c.obj -c /home/nils/github/psp/main.c
 
 CMakeFiles/Dev.dir/main.c.i: cmake_force
@@ -85,15 +127,21 @@ CMakeFiles/Dev.dir/main.c.s: cmake_force
 
 # Object files for target Dev
 Dev_OBJECTS = \
+"CMakeFiles/Dev.dir/input.c.obj" \
+"CMakeFiles/Dev.dir/render.c.obj" \
+"CMakeFiles/Dev.dir/player.c.obj" \
 "CMakeFiles/Dev.dir/main.c.obj"
 
 # External object files for target Dev
 Dev_EXTERNAL_OBJECTS =
 
+Dev: CMakeFiles/Dev.dir/input.c.obj
+Dev: CMakeFiles/Dev.dir/render.c.obj
+Dev: CMakeFiles/Dev.dir/player.c.obj
 Dev: CMakeFiles/Dev.dir/main.c.obj
 Dev: CMakeFiles/Dev.dir/build.make
 Dev: CMakeFiles/Dev.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Dev"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Dev"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Dev.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E cmake_echo_color --cyan Not\ stripping\ binary\ because\ building\ PRX.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Calling psp-fixup-imports"

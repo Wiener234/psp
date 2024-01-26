@@ -1,21 +1,18 @@
-// main.c
 #include <pspkernel.h>
-#include <pspdebug.h>
+#include <pspgu.h>
 #include <pspdisplay.h>
 #include <pspctrl.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <pspgu.h>
-
 #include "input.h"
+#include "pspdebug.h"
 #include "render.h"
-#include "player.h"
 
-PSP_MODULE_INFO("Dev", 0, 1, 1);
-PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
+PSP_MODULE_INFO("gutest", 0, 1, 0);
+PSP_MAIN_THREAD_ATTR(THREAD_ATTR_VFPU | THREAD_ATTR_USER);
 
-#define printf pspDebugScreenPrintf
+/* #define BUFFER_WIDTH 512 */
+/* #define BUFFER_HEIGHT 272 */
+/* #define SCREEN_WIDTH 480 */
+/* #define SCREEN_HEIGHT BUFFER_HEIGHT */
 
 int done = 0;
 
@@ -40,7 +37,9 @@ int setup_callback(){
     return thid;
 }
 
-void init_gu(){
+/* char list[0x20000] __attribute__((aligned(64))); */
+
+void initGu(){
     sceGuInit();
 
     //Set up buffers
@@ -65,51 +64,69 @@ void init_gu(){
     sceGuDisplay(GU_TRUE);
 }
 
-void update(){
-   player_update(); 
-}
+/* void endGu(){ */
+/*     sceGuDisplay(GU_FALSE); */
+/*     sceGuTerm(); */
+/* } */
 
-void render(){
-   player_render(); 
-}
+/* void startFrame(){ */
+/*     sceGuStart(GU_DIRECT, list); */
+/*     sceGuClearColor(0xFFFFFFFF); // White background */
+/*     sceGuClear(GU_COLOR_BUFFER_BIT); */
+/* } */
 
-int main(){
+/* void endFrame(){ */
+/*     sceGuFinish(); */
+/*     sceGuSync(0, 0); */
+/*     sceDisplayWaitVblankStart(); */
+/*     sceGuSwapBuffers(); */
+/* } */
 
+/* typedef struct { */
+/*     unsigned short u, v; */
+/*     float x, y, z; */
+/* } Vertex; */
+
+/* void drawRect(float x, float y, float w, float h) { */
+
+/*     Vertex* vertices = (struct Vertex*)sceGuGetMemory(2 * sizeof(Vertex)); */
+
+/*     vertices[0].x = x; */
+/*     vertices[0].y = y; */
+
+/*     vertices[1].x = x + w; */
+/*     vertices[1].y = y + h; */
+
+/*     sceGuColor(0xFF0000FF); // Red, colors are ABGR */
+/*     sceGuDrawArray(GU_SPRITES, GU_TEXTURE_16BIT | GU_VERTEX_32BITF | GU_TRANSFORM_2D, 2, 0, vertices); */
+/* } */
+
+
+int main() {
     SceCtrlData pad;
-
-    /* pspDebugScreenInit(); */
     setup_callback();
-    
     input_setup();
-    init_gu();
-
-    float x = 32;
-    float y = 32;
-    
-    
+    initGu();
+    pspDebugScreenInit();
+    float x,y = 32;
     while(!done){
-
+        
         sceCtrlReadBufferPositive(&pad, 1);
         
-        /* pspDebugScreenSetXY(50,1); */
-        
-        input_button(&pad);
         input_stick(&pad);
-
         x = x+LX;
         y = y+LY;
-
-        update();
+        
+        /* pspDebugScreenSetXY(0,1); */
+        /* pspDebugScreenPrintf("X: %f  Y: %f   ", LX, LY); */
         start_frame();
 
-        render();
-         
-        end_frame();
-
-
         
+
+        drawRect(x, y, 64, 64);
+
+        end_frame();
     }
-    sceKernelExitGame();
 
     return 0;
 }

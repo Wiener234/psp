@@ -1,6 +1,24 @@
 [
 {
   "directory": "/home/nils/github/psp/build",
+  "command": "/home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0 -o CMakeFiles/Dev.dir/input.c.obj -c /home/nils/github/psp/input.c",
+  "file": "/home/nils/github/psp/input.c",
+  "output": "CMakeFiles/Dev.dir/input.c.obj"
+},
+{
+  "directory": "/home/nils/github/psp/build",
+  "command": "/home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0 -o CMakeFiles/Dev.dir/render.c.obj -c /home/nils/github/psp/render.c",
+  "file": "/home/nils/github/psp/render.c",
+  "output": "CMakeFiles/Dev.dir/render.c.obj"
+},
+{
+  "directory": "/home/nils/github/psp/build",
+  "command": "/home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0 -o CMakeFiles/Dev.dir/player.c.obj -c /home/nils/github/psp/player.c",
+  "file": "/home/nils/github/psp/player.c",
+  "output": "CMakeFiles/Dev.dir/player.c.obj"
+},
+{
+  "directory": "/home/nils/github/psp/build",
   "command": "/home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0 -o CMakeFiles/Dev.dir/main.c.obj -c /home/nils/github/psp/main.c",
   "file": "/home/nils/github/psp/main.c",
   "output": "CMakeFiles/Dev.dir/main.c.obj"

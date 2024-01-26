@@ -1,4 +1,4 @@
-CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/main.c \
+CMakeFiles/Dev.dir/test.c.obj: /home/nils/github/psp/test.c \
  /home/nils/pspdev/psp/sdk/include/pspkernel.h \
  /home/nils/pspdev/psp/sdk/include/pspuser.h \
  /home/nils/pspdev/psp/sdk/include/psptypes.h \
@@ -62,17 +62,8 @@ CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/main.c \
  /home/nils/pspdev/psp/sdk/include/pspkdebug.h \
  /home/nils/pspdev/psp/sdk/include/pspintrman_kernel.h \
  /home/nils/pspdev/psp/sdk/include/pspmodulemgr_kernel.h \
+ /home/nils/pspdev/psp/sdk/include/pspgu.h \
+ /home/nils/pspdev/psp/sdk/include/pspge.h \
  /home/nils/pspdev/psp/sdk/include/pspdisplay.h \
  /home/nils/pspdev/psp/sdk/include/pspctrl.h \
- /home/nils/pspdev/psp/include/stdio.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdarg.h \
- /home/nils/pspdev/psp/include/sys/stdio.h \
- /home/nils/pspdev/psp/include/stdlib.h \
- /home/nils/pspdev/psp/include/machine/stdlib.h \
- /home/nils/pspdev/psp/include/alloca.h \
- /home/nils/pspdev/psp/include/string.h \
- /home/nils/pspdev/psp/include/strings.h \
- /home/nils/pspdev/psp/include/sys/string.h \
- /home/nils/pspdev/psp/sdk/include/pspgu.h \
- /home/nils/pspdev/psp/sdk/include/pspge.h /home/nils/github/psp/input.h \
- /home/nils/github/psp/render.h /home/nils/github/psp/player.h
+ /home/nils/github/psp/input.h /home/nils/github/psp/render.h

@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Dev.dir/input.c.obj"
+  "CMakeFiles/Dev.dir/input.c.obj.d"
   "CMakeFiles/Dev.dir/main.c.obj"
   "CMakeFiles/Dev.dir/main.c.obj.d"
+  "CMakeFiles/Dev.dir/player.c.obj"
+  "CMakeFiles/Dev.dir/player.c.obj.d"
+  "CMakeFiles/Dev.dir/render.c.obj"
+  "CMakeFiles/Dev.dir/render.c.obj.d"
   "Dev"
   "Dev.pdb"
 )
