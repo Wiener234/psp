@@ -126,104 +126,8 @@ Dev: cmake_check_build_system
 
 # fast build rule for target.
 Dev/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Dev.dir/build.make src/CMakeFiles/Dev.dir/build
 .PHONY : Dev/fast
-
-input.obj: input.c.obj
-.PHONY : input.obj
-
-# target to build an object file
-input.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/input.c.obj
-.PHONY : input.c.obj
-
-input.i: input.c.i
-.PHONY : input.i
-
-# target to preprocess a source file
-input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/input.c.i
-.PHONY : input.c.i
-
-input.s: input.c.s
-.PHONY : input.s
-
-# target to generate assembly for a file
-input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/input.c.s
-.PHONY : input.c.s
-
-main.obj: main.c.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/main.c.s
-.PHONY : main.c.s
-
-player.obj: player.c.obj
-.PHONY : player.obj
-
-# target to build an object file
-player.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/player.c.obj
-.PHONY : player.c.obj
-
-player.i: player.c.i
-.PHONY : player.i
-
-# target to preprocess a source file
-player.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/player.c.i
-.PHONY : player.c.i
-
-player.s: player.c.s
-.PHONY : player.s
-
-# target to generate assembly for a file
-player.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/player.c.s
-.PHONY : player.c.s
-
-render.obj: render.c.obj
-.PHONY : render.obj
-
-# target to build an object file
-render.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/render.c.obj
-.PHONY : render.c.obj
-
-render.i: render.c.i
-.PHONY : render.i
-
-# target to preprocess a source file
-render.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/render.c.i
-.PHONY : render.c.i
-
-render.s: render.c.s
-.PHONY : render.s
-
-# target to generate assembly for a file
-render.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/render.c.s
-.PHONY : render.c.s
 
 # Help Target
 help:
@@ -234,18 +138,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Dev"
-	@echo "... input.obj"
-	@echo "... input.i"
-	@echo "... input.s"
-	@echo "... main.obj"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... player.obj"
-	@echo "... player.i"
-	@echo "... player.s"
-	@echo "... render.obj"
-	@echo "... render.i"
-	@echo "... render.s"
 .PHONY : help
 
 

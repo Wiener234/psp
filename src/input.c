@@ -28,8 +28,10 @@ float normAnalog(int y){
 }
 
 void input_stick(SceCtrlData *pad){
-    LX = normAnalog(pad->Lx);
-    LY = normAnalog(pad->Ly);
+    if(!RIGHT_DOWN || !LEFT_DOWN){
+        LX = normAnalog(pad->Lx);
+        LY = normAnalog(pad->Ly);
+    }
 }
 
 void input_button(SceCtrlData *_pad){
@@ -73,7 +75,6 @@ void input_button(SceCtrlData *_pad){
 
     if(pad.Buttons & PSP_CTRL_RIGHT && !RIGHT_DOWN){
         RIGHT_DOWN = 1;
-        printf("\nRight\n");
     }else if(!(pad.Buttons & PSP_CTRL_RIGHT) && RIGHT_DOWN){
         RIGHT_DOWN = 0;
     }
@@ -87,7 +88,6 @@ void input_button(SceCtrlData *_pad){
 
     if(pad.Buttons & PSP_CTRL_LEFT && !LEFT_DOWN){
         LEFT_DOWN = 1;
-        printf("\nLeft\n");
     }else if(!(pad.Buttons & PSP_CTRL_LEFT) && LEFT_DOWN){
         LEFT_DOWN = 0;
     }

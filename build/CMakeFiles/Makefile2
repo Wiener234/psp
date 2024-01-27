@@ -63,42 +63,57 @@ CMAKE_BINARY_DIR = /home/nils/github/psp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Dev.dir/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Dev.dir/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Dev.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/Dev.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/Dev.dir/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Dev.dir
 
 # All Build rule for target.
-CMakeFiles/Dev.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Dev"
-.PHONY : CMakeFiles/Dev.dir/all
+src/CMakeFiles/Dev.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Dev.dir/build.make src/CMakeFiles/Dev.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Dev.dir/build.make src/CMakeFiles/Dev.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nils/github/psp/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Dev"
+.PHONY : src/CMakeFiles/Dev.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Dev.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Dev.dir/all
+src/CMakeFiles/Dev.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Dev.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nils/github/psp/build/CMakeFiles 0
-.PHONY : CMakeFiles/Dev.dir/rule
+.PHONY : src/CMakeFiles/Dev.dir/rule
 
 # Convenience name for target.
-Dev: CMakeFiles/Dev.dir/rule
+Dev: src/CMakeFiles/Dev.dir/rule
 .PHONY : Dev
 
 # clean rule for target.
-CMakeFiles/Dev.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dev.dir/build.make CMakeFiles/Dev.dir/clean
-.PHONY : CMakeFiles/Dev.dir/clean
+src/CMakeFiles/Dev.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Dev.dir/build.make src/CMakeFiles/Dev.dir/clean
+.PHONY : src/CMakeFiles/Dev.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -49,7 +49,7 @@ void end_frame(){
     sceGuSwapBuffers();
 }
 
-void drawRect(float x, float y, float w, float h) {
+void drawRect(float x, float y, float w, float h, unsigned char color) {
 
     Vertex* vertices = (struct Vertex*)sceGuGetMemory(2 * sizeof(Vertex));
 
@@ -59,6 +59,6 @@ void drawRect(float x, float y, float w, float h) {
     vertices[1].x = x + w;
     vertices[1].y = y + h;
 
-    sceGuColor(0xFF0000FF); // Red, colors are ABGR
+    sceGuColor(color); // Red, colors are ABGR
     sceGuDrawArray(GU_SPRITES, GU_TEXTURE_16BIT | GU_VERTEX_32BITF | GU_TRANSFORM_2D, 2, 0, vertices);
 }

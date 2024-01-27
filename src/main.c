@@ -11,6 +11,7 @@
 #include "input.h"
 #include "render.h"
 #include "player.h"
+#include "enviorment.h"
 
 PSP_MODULE_INFO("Dev", 0, 1, 1);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
@@ -71,6 +72,7 @@ void update(){
 
 void render(){
    player_render(); 
+   enviorment_render();
 }
 
 int main(){

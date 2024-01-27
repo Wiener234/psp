@@ -23,7 +23,7 @@ void start_frame();
 
 void end_frame();
 
-void drawRect(float x, float y, float width, float height);
+void drawRect(float x, float y, float width, float height, unsigned char color);
 
 
 #endif
