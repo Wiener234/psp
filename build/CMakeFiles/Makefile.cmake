@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/nils/github/psp/CMakeLists.txt"
-  "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeSystem.cmake"
+  "CMakeFiles/3.28.2/CMakeCCompiler.cmake"
+  "CMakeFiles/3.28.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.28.2/CMakeSystem.cmake"
   "/home/nils/github/psp/src/CMakeLists.txt"
   "/home/nils/pspdev/psp/share/CreatePBP.cmake"
   "/home/nils/pspdev/psp/share/pspdev.cmake"

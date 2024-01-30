@@ -1,5 +1,6 @@
 #include "player.h"
 
+#include "enviorment.h"
 #include "render.h"
 #include "input.h"
 
@@ -31,15 +32,20 @@ void player_update(){
         player_x = SCREEN_WIDTH - PLAYER_WIDTH;
     }
 
-    if(player_y>= 200 - PLAYER_HEIGHT){
-        player_y = 200 - PLAYER_HEIGHT;
-        gravity = 1;
-        isGrounded = 1;
-        isJumping = 0;
-        jump = PLAYER_JUMP_FORCE;
-    }else {
-        gravity = gravity * 1.08;
-        player_y = player_y + gravity;
+    for(int i=0; i<env_cords_len; i++){
+        if(player_x + PLAYER_WIDTH + 1 >= env_cords[i][0] && player_y >= env_cords[i][1]){
+            player_x = env_cords[i][0];
+        }
+        if(player_y>= env_cords[i][1] - PLAYER_HEIGHT && player_x + PLAYER_WIDTH > env_cords[i][0] && player_x < env_cords[i][0] + env_cords[i][1]){
+            player_y = env_cords[i][1] - PLAYER_HEIGHT;
+            gravity = 1;
+            isGrounded = 1;
+            isJumping = 0;
+            jump = PLAYER_JUMP_FORCE;
+        }else {
+            gravity = gravity * 1.08;
+            player_y = player_y + gravity;
+        }
     }
 
     if(isGrounded){
@@ -63,5 +69,5 @@ void player_update(){
 }
 
 void player_render(){
-    drawRect(player_x, player_y, PLAYER_WIDTH, PLAYER_HEIGHT, 0xFFFFFFFF);
+    drawRect(player_x, player_y, PLAYER_WIDTH, PLAYER_HEIGHT, 0x00000000);
 }

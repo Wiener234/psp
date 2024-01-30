@@ -1,9 +1,10 @@
 src/CMakeFiles/Dev.dir/player.c.obj: /home/nils/github/psp/src/player.c \
  /home/nils/github/psp/include/player.h \
+ /home/nils/github/psp/include/enviorment.h \
  /home/nils/github/psp/include/render.h \
  /home/nils/pspdev/psp/sdk/include/pspgu.h \
  /home/nils/pspdev/psp/sdk/include/psptypes.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
  /home/nils/pspdev/psp/include/stdint.h \
  /home/nils/pspdev/psp/include/machine/_default_types.h \
  /home/nils/pspdev/psp/include/sys/features.h \

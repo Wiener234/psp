@@ -2,7 +2,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
  /home/nils/pspdev/psp/sdk/include/pspkernel.h \
  /home/nils/pspdev/psp/sdk/include/pspuser.h \
  /home/nils/pspdev/psp/sdk/include/psptypes.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
  /home/nils/pspdev/psp/include/stdint.h \
  /home/nils/pspdev/psp/include/machine/_default_types.h \
  /home/nils/pspdev/psp/include/sys/features.h \
@@ -14,6 +14,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
  /home/nils/pspdev/psp/sdk/include/pspiofilemgr_fcntl.h \
  /home/nils/pspdev/psp/sdk/include/pspiofilemgr_stat.h \
  /home/nils/pspdev/psp/sdk/include/pspiofilemgr_dirent.h \
+ /home/nils/pspdev/psp/sdk/include/pspiofilemgr_devctl.h \
  /home/nils/pspdev/psp/sdk/include/psploadexec.h \
  /home/nils/pspdev/psp/sdk/include/pspmoduleinfo.h \
  /home/nils/pspdev/psp/sdk/include/pspmodulemgr.h \
@@ -27,7 +28,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
  /home/nils/pspdev/psp/include/sys/config.h \
  /home/nils/pspdev/psp/include/machine/ieeefp.h \
  /home/nils/pspdev/psp/include/sys/cdefs.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stddef.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stddef.h \
  /home/nils/pspdev/psp/include/sys/_timeval.h \
  /home/nils/pspdev/psp/include/sys/_types.h \
  /home/nils/pspdev/psp/include/machine/_types.h \
@@ -40,7 +41,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
  /home/nils/pspdev/psp/include/sys/_timespec.h \
  /home/nils/pspdev/psp/include/sys/_pthreadtypes.h \
  /home/nils/pspdev/psp/include/bits/posix_opt.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include-fixed/limits.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/limits.h \
  /home/nils/pspdev/psp/include/sys/sched.h \
  /home/nils/pspdev/psp/include/machine/types.h \
  /home/nils/pspdev/psp/include/time.h \
@@ -65,7 +66,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
  /home/nils/pspdev/psp/sdk/include/pspdisplay.h \
  /home/nils/pspdev/psp/sdk/include/pspctrl.h \
  /home/nils/pspdev/psp/include/stdio.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdarg.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdarg.h \
  /home/nils/pspdev/psp/include/sys/stdio.h \
  /home/nils/pspdev/psp/include/stdlib.h \
  /home/nils/pspdev/psp/include/machine/stdlib.h \

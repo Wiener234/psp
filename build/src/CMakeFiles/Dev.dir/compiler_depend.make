@@ -4,7 +4,7 @@
 src/CMakeFiles/Dev.dir/enviorment.c.obj: /home/nils/github/psp/src/enviorment.c \
   /home/nils/github/psp/include/enviorment.h \
   /home/nils/github/psp/include/render.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
   /home/nils/pspdev/psp/include/_newlib_version.h \
   /home/nils/pspdev/psp/include/machine/_default_types.h \
   /home/nils/pspdev/psp/include/stdint.h \
@@ -17,8 +17,8 @@ src/CMakeFiles/Dev.dir/enviorment.c.obj: /home/nils/github/psp/src/enviorment.c 
 
 src/CMakeFiles/Dev.dir/input.c.obj: /home/nils/github/psp/src/input.c \
   /home/nils/github/psp/include/input.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stddef.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stddef.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
   /home/nils/pspdev/psp/include/_ansi.h \
   /home/nils/pspdev/psp/include/_newlib_version.h \
   /home/nils/pspdev/psp/include/machine/_default_types.h \
@@ -45,10 +45,10 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
   /home/nils/github/psp/include/input.h \
   /home/nils/github/psp/include/player.h \
   /home/nils/github/psp/include/render.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include-fixed/limits.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdarg.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stddef.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/limits.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdarg.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stddef.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
   /home/nils/pspdev/psp/include/_ansi.h \
   /home/nils/pspdev/psp/include/_newlib_version.h \
   /home/nils/pspdev/psp/include/alloca.h \
@@ -99,6 +99,7 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
   /home/nils/pspdev/psp/sdk/include/pspintrman.h \
   /home/nils/pspdev/psp/sdk/include/pspintrman_kernel.h \
   /home/nils/pspdev/psp/sdk/include/pspiofilemgr.h \
+  /home/nils/pspdev/psp/sdk/include/pspiofilemgr_devctl.h \
   /home/nils/pspdev/psp/sdk/include/pspiofilemgr_dirent.h \
   /home/nils/pspdev/psp/sdk/include/pspiofilemgr_fcntl.h \
   /home/nils/pspdev/psp/sdk/include/pspiofilemgr_kernel.h \
@@ -122,10 +123,11 @@ src/CMakeFiles/Dev.dir/main.c.obj: /home/nils/github/psp/src/main.c \
   /home/nils/pspdev/psp/sdk/include/psputils.h
 
 src/CMakeFiles/Dev.dir/player.c.obj: /home/nils/github/psp/src/player.c \
+  /home/nils/github/psp/include/enviorment.h \
   /home/nils/github/psp/include/input.h \
   /home/nils/github/psp/include/player.h \
   /home/nils/github/psp/include/render.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
   /home/nils/pspdev/psp/include/_newlib_version.h \
   /home/nils/pspdev/psp/include/machine/_default_types.h \
   /home/nils/pspdev/psp/include/stdint.h \
@@ -141,7 +143,7 @@ src/CMakeFiles/Dev.dir/player.c.obj: /home/nils/github/psp/src/player.c \
 
 src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
   /home/nils/github/psp/include/render.h \
-  /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+  /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
   /home/nils/pspdev/psp/include/_newlib_version.h \
   /home/nils/pspdev/psp/include/machine/_default_types.h \
   /home/nils/pspdev/psp/include/stdint.h \
@@ -192,10 +194,6 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 
 /home/nils/pspdev/psp/include/time.h:
 
-/home/nils/pspdev/psp/sdk/include/pspctrl.h:
-
-/home/nils/pspdev/psp/include/sys/signal.h:
-
 /home/nils/github/psp/include/enviorment.h:
 
 /home/nils/pspdev/psp/include/sys/config.h:
@@ -204,27 +202,37 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 
 /home/nils/pspdev/psp/include/sys/cdefs.h:
 
-/home/nils/pspdev/lib/gcc/psp/11.2.0/include/stddef.h:
+/home/nils/github/psp/src/render.c:
+
+/home/nils/pspdev/psp/include/sys/_types.h:
+
+/home/nils/github/psp/src/enviorment.c:
+
+/home/nils/pspdev/lib/gcc/psp/13.2.0/include/limits.h:
+
+/home/nils/pspdev/psp/include/stdio.h:
 
 /home/nils/pspdev/psp/include/math.h:
+
+/home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdarg.h:
 
 /home/nils/pspdev/psp/sdk/include/pspdebug.h:
 
 /home/nils/pspdev/psp/include/machine/_types.h:
 
-/home/nils/pspdev/psp/sdk/include/pspthreadman.h:
+/home/nils/pspdev/psp/sdk/include/pspctrl.h:
 
-/home/nils/github/psp/include/input.h:
+/home/nils/pspdev/psp/include/sys/signal.h:
+
+/home/nils/pspdev/lib/gcc/psp/13.2.0/include/stddef.h:
+
+/home/nils/pspdev/psp/sdk/include/psptypes.h:
 
 /home/nils/pspdev/psp/include/_ansi.h:
 
-/home/nils/github/psp/src/enviorment.c:
+/home/nils/pspdev/psp/sdk/include/pspthreadman.h:
 
-/home/nils/github/psp/src/render.c:
-
-/home/nils/pspdev/psp/include/sys/_types.h:
-
-/home/nils/pspdev/psp/include/stdio.h:
+/home/nils/github/psp/include/input.h:
 
 /home/nils/pspdev/psp/include/stdint.h:
 
@@ -238,17 +246,11 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 
 /home/nils/pspdev/psp/include/machine/stdlib.h:
 
-/home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h:
-
 /home/nils/pspdev/psp/include/machine/time.h:
 
 /home/nils/pspdev/psp/include/machine/_default_types.h:
 
 /home/nils/pspdev/psp/include/machine/_time.h:
-
-/home/nils/github/psp/src/input.c:
-
-/home/nils/pspdev/psp/sdk/include/psptypes.h:
 
 /home/nils/pspdev/psp/include/sys/lock.h:
 
@@ -258,11 +260,11 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 
 /home/nils/pspdev/psp/include/sys/_intsup.h:
 
+/home/nils/github/psp/src/input.c:
+
 /home/nils/pspdev/psp/include/sys/_stdint.h:
 
 /home/nils/pspdev/psp/include/newlib.h:
-
-/home/nils/pspdev/lib/gcc/psp/11.2.0/include-fixed/limits.h:
 
 /home/nils/pspdev/psp/include/sys/features.h:
 
@@ -275,8 +277,6 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 /home/nils/github/psp/include/player.h:
 
 /home/nils/pspdev/psp/include/machine/_endian.h:
-
-/home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdarg.h:
 
 /home/nils/pspdev/psp/include/_newlib_version.h:
 
@@ -291,6 +291,8 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 /home/nils/pspdev/psp/sdk/include/pspuser.h:
 
 /home/nils/pspdev/psp/include/string.h:
+
+/home/nils/pspdev/psp/sdk/include/pspiofilemgr_devctl.h:
 
 /home/nils/pspdev/psp/include/strings.h:
 
@@ -315,6 +317,8 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
 /home/nils/pspdev/psp/include/sys/stdio.h:
 
 /home/nils/pspdev/psp/sdk/include/pspsysmem.h:
+
+/home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h:
 
 /home/nils/pspdev/psp/include/sys/string.h:
 

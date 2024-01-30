@@ -49,7 +49,7 @@ void end_frame(){
     sceGuSwapBuffers();
 }
 
-void drawRect(float x, float y, float w, float h, unsigned char color) {
+void drawRect(float x, float y, float w, float h, unsigned int color) {
 
     Vertex* vertices = (struct Vertex*)sceGuGetMemory(2 * sizeof(Vertex));
 

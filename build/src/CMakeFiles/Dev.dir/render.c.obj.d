@@ -2,7 +2,7 @@ src/CMakeFiles/Dev.dir/render.c.obj: /home/nils/github/psp/src/render.c \
  /home/nils/github/psp/include/render.h \
  /home/nils/pspdev/psp/sdk/include/pspgu.h \
  /home/nils/pspdev/psp/sdk/include/psptypes.h \
- /home/nils/pspdev/lib/gcc/psp/11.2.0/include/stdint.h \
+ /home/nils/pspdev/lib/gcc/psp/13.2.0/include/stdint.h \
  /home/nils/pspdev/psp/include/stdint.h \
  /home/nils/pspdev/psp/include/machine/_default_types.h \
  /home/nils/pspdev/psp/include/sys/features.h \

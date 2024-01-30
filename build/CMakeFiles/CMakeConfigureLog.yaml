@@ -694,3 +694,651 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Linux - 6.6.9-zen1-1-zen - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/nils/pspdev/bin/psp-gcc 
+      Build flags: -I/home/nils/pspdev/psp/include;-I/home/nils/pspdev/psp/sdk/include;-DPSP;-G0
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/nils/github/psp/build/CMakeFiles/3.28.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/nils/pspdev/bin/psp-g++ 
+      Build flags: -I/home/nils/pspdev/psp/include;-I/home/nils/pspdev/psp/sdk/include;-DPSP;-G0
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/nils/github/psp/build/CMakeFiles/3.28.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ"
+      binary: "/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_498d8/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_498d8.dir/build.make CMakeFiles/cmTC_498d8.dir/build
+        make[1]: Entering directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ'
+        Building C object CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj
+        /home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0    -v -o CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/'
+         /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/cc1 -quiet -v -I /home/nils/pspdev/psp/include -I /home/nils/pspdev/psp/sdk/include -iprefix /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/ -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCCompilerABI.c -G 0 -quiet -dumpdir CMakeFiles/cmTC_498d8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/cc6Is4Q5.s
+        GNU C17 (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/sys-include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include-fixed"
+        ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/sys-include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include"
+        ignoring duplicate directory "/home/nils/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/nils/pspdev/psp/sdk/include
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: cb094683c84535fc2976cd646eeb836d
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/'
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj /tmp/cc6Is4Q5.s
+        COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_498d8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_498d8.dir/link.txt --verbose=1
+        /home/nils/pspdev/bin/psp-gcc -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0  -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -o cmTC_498d8   -L/home/nils/pspdev/lib  -L/home/nils/pspdev/psp/lib  -L/home/nils/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_498d8' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_498d8.'
+         /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2 -plugin /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so -plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccq7fx46.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc -EL -G 0 -o cmTC_498d8 /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0 -L/home/nils/pspdev/bin/../lib/gcc -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o
+        /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -fresolution=/tmp/ccq7fx46.res -flinker-output=exec /home/nils/pspdev/psp/lib/libpthread.a@0x609b2 /home/nils/pspdev/psp/lib/libpthread.a@0x62a3e /home/nils/pspdev/psp/lib/libpthread.a@0x64d26 /home/nils/pspdev/psp/lib/libpthread.a@0x667ca /home/nils/pspdev/psp/lib/libpthread.a@0x1aae /home/nils/pspdev/psp/lib/libpthread.a@0x50ce /home/nils/pspdev/psp/lib/libpthread.a@0x7152 /home/nils/pspdev/psp/lib/libpthread.a@0xb6ea /home/nils/pspdev/psp/lib/libpthread.a@0x1a346 /home/nils/pspdev/psp/lib/libpthread.a@0x1c242 /home/nils/pspdev/psp/lib/libpthread.a@0x2705a /home/nils/pspdev/psp/lib/libpthread.a@0x547ea /home/nils/pspdev/psp/lib/libpthread.a@0x5926a /home/nils/pspdev/psp/lib/libpthread.a@0x5cd5a /home/nils/pspdev/psp/lib/libpthread.a@0x5e836 /home/nils/pspdev/psp/lib/libpthread.a@0x68ace /home/nils/pspdev/psp/lib/libpthread.a@0x69ff2 /home/nils/pspdev/psp/lib/libpthread.a@0x6c55a /home/nils/pspdev/psp/lib/libpthread.a@0x3662 
+        /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -fresolution=/tmp/ccq7fx46.res -flinker-output=exec /home/nils/pspdev/psp/lib/libpthread.a@0x609b2 /home/nils/pspdev/psp/lib/libpthread.a@0x62a3e /home/nils/pspdev/psp/lib/libpthread.a@0x64d26 /home/nils/pspdev/psp/lib/libpthread.a@0x667ca /home/nils/pspdev/psp/lib/libpthread.a@0x1aae /home/nils/pspdev/psp/lib/libpthread.a@0x50ce /home/nils/pspdev/psp/lib/libpthread.a@0x7152 /home/nils/pspdev/psp/lib/libpthread.a@0xb6ea /home/nils/pspdev/psp/lib/libpthread.a@0x1a346 /home/nils/pspdev/psp/lib/libpthread.a@0x1c242 /home/nils/pspdev/psp/lib/libpthread.a@0x2705a /home/nils/pspdev/psp/lib/libpthread.a@0x547ea /home/nils/pspdev/psp/lib/libpthread.a@0x5926a /home/nils/pspdev/psp/lib/libpthread.a@0x5cd5a /home/nils/pspdev/psp/lib/libpthread.a@0x5e836 /home/nils/pspdev/psp/lib/libpthread.a@0x68ace /home/nils/pspdev/psp/lib/libpthread.a@0x69ff2 /home/nils/pspdev/psp/lib/libpthread.a@0x6c55a /home/nils/pspdev/psp/lib/libpthread.a@0x3662 
+        /home/nils/pspdev/bin/psp-gcc @/tmp/ccM2Xx4U
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccw4hBI0.ltrans.out' '-fwpa' '-fresolution=/tmp/ccq7fx46.res' '-flinker-output=exec'
+         /home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/lto1 -G 0 -G 0 -quiet -dumpbase ./cmTC_498d8.wpa -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccw4hBI0.ltrans.out -fwpa -fresolution=/tmp/ccq7fx46.res -flinker-output=exec @/tmp/cc70K4vc
+        GNU GIMPLE (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccw4hBI0.ltrans.out' '-fwpa' '-fresolution=/tmp/ccq7fx46.res' '-flinker-output=exec' '-dumpdir' './cmTC_498d8.wpa.'
+        /home/nils/pspdev/bin/psp-gcc @/tmp/cctQzirW
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccw4hBI0.ltrans0.ltrans.o'
+         /home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/lto1 -G 0 -G 0 -quiet -dumpbase ./cmTC_498d8.ltrans0.ltrans -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccZDVyAI -o /tmp/cc4C0EMT.s
+        GNU GIMPLE (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccw4hBI0.ltrans0.ltrans.o'
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -G 0 -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccw4hBI0.ltrans0.ltrans.o /tmp/cc4C0EMT.s
+        COMPILER_PATH=/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccw4hBI0.ltrans0.ltrans.o' '-dumpdir' './cmTC_498d8.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_498d8' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_498d8.'
+        make[1]: Leaving directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/nils/pspdev/psp/sdk/include]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/nils/pspdev/psp/sdk/include] ==> [/home/nils/pspdev/psp/sdk/include]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/include]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/include-fixed]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include] ==> [/home/nils/pspdev/psp/include]
+        implicit include dirs: [/home/nils/pspdev/psp/sdk/include;/home/nils/pspdev/lib/gcc/psp/13.2.0/include;/home/nils/pspdev/lib/gcc/psp/13.2.0/include-fixed;/home/nils/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_498d8/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_498d8.dir/build.make CMakeFiles/cmTC_498d8.dir/build]
+        ignore line: [make[1]: Entering directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-3ivTdJ']
+        ignore line: [Building C object CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/nils/pspdev/bin/psp-gcc -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0    -v -o CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/']
+        ignore line: [ /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/cc1 -quiet -v -I /home/nils/pspdev/psp/include -I /home/nils/pspdev/psp/sdk/include -iprefix /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/ -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCCompilerABI.c -G 0 -quiet -dumpdir CMakeFiles/cmTC_498d8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/cc6Is4Q5.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/nils/pspdev/psp/sdk/include]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: cb094683c84535fc2976cd646eeb836d]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/']
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj /tmp/cc6Is4Q5.s]
+        ignore line: [COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_498d8]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_498d8.dir/link.txt --verbose=1]
+        ignore line: [/home/nils/pspdev/bin/psp-gcc -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0  -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -o cmTC_498d8   -L/home/nils/pspdev/lib  -L/home/nils/pspdev/psp/lib  -L/home/nils/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/nils/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_498d8' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_498d8.']
+        link line: [ /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2 -plugin /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so -plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccq7fx46.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc -EL -G 0 -o cmTC_498d8 /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0 -L/home/nils/pspdev/bin/../lib/gcc -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o]
+          arg [/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccq7fx46.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-G] ==> ignore
+          arg [0] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_498d8] ==> ignore
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o]
+          arg [-L/home/nils/pspdev/lib] ==> dir [/home/nils/pspdev/lib]
+          arg [-L/home/nils/pspdev/psp/lib] ==> dir [/home/nils/pspdev/psp/lib]
+          arg [-L/home/nils/pspdev/psp/sdk/lib] ==> dir [/home/nils/pspdev/psp/sdk/lib]
+          arg [-L/home/nils/pspdev/lib] ==> dir [/home/nils/pspdev/lib]
+          arg [-L/home/nils/pspdev/psp/lib] ==> dir [/home/nils/pspdev/psp/lib]
+          arg [-L/home/nils/pspdev/psp/sdk/lib] ==> dir [/home/nils/pspdev/psp/sdk/lib]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0] ==> dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc] ==> dir [/home/nils/pspdev/bin/../lib/gcc]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib] ==> dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_498d8.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o] ==> [/home/nils/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crti.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtbegin.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtend.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtn.o]
+        collapse library dir [/home/nils/pspdev/lib] ==> [/home/nils/pspdev/lib]
+        collapse library dir [/home/nils/pspdev/psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        collapse library dir [/home/nils/pspdev/psp/sdk/lib] ==> [/home/nils/pspdev/psp/sdk/lib]
+        collapse library dir [/home/nils/pspdev/lib] ==> [/home/nils/pspdev/lib]
+        collapse library dir [/home/nils/pspdev/psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        collapse library dir [/home/nils/pspdev/psp/sdk/lib] ==> [/home/nils/pspdev/psp/sdk/lib]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc] ==> [/home/nils/pspdev/lib/gcc]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/nils/pspdev/psp/lib/crt0.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crti.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtbegin.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtend.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtn.o]
+        implicit dirs: [/home/nils/pspdev/lib;/home/nils/pspdev/psp/lib;/home/nils/pspdev/psp/sdk/lib;/home/nils/pspdev/lib/gcc/psp/13.2.0;/home/nils/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh"
+      binary: "/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b048d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b048d.dir/build.make CMakeFiles/cmTC_b048d.dir/build
+        make[1]: Entering directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh'
+        Building CXX object CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/nils/pspdev/bin/psp-g++ -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0    -v -o CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/'
+         /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/cc1plus -quiet -v -I /home/nils/pspdev/psp/include -I /home/nils/pspdev/psp/sdk/include -iprefix /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/ -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -G 0 -quiet -dumpdir CMakeFiles/cmTC_b048d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccxr17Q4.s
+        GNU C++17 (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/sys-include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include-fixed"
+        ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/sys-include"
+        ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include"
+        ignoring duplicate directory "/home/nils/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/nils/pspdev/psp/sdk/include
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 5c08700e7aef221271cc9e5f3cb00135
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/'
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccxr17Q4.s
+        COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b048d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b048d.dir/link.txt --verbose=1
+        /home/nils/pspdev/bin/psp-g++ -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0  -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_b048d   -L/home/nils/pspdev/lib  -L/home/nils/pspdev/psp/lib  -L/home/nils/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_b048d' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_b048d.'
+         /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2 -plugin /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so -plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7vNKI1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc -EL -G 0 -o cmTC_b048d /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0 -L/home/nils/pspdev/bin/../lib/gcc -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o
+        /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -fresolution=/tmp/cc7vNKI1.res -flinker-output=exec /home/nils/pspdev/psp/lib/libpthread.a@0x609b2 /home/nils/pspdev/psp/lib/libpthread.a@0x62a3e /home/nils/pspdev/psp/lib/libpthread.a@0x64d26 /home/nils/pspdev/psp/lib/libpthread.a@0x667ca /home/nils/pspdev/psp/lib/libpthread.a@0x1aae /home/nils/pspdev/psp/lib/libpthread.a@0x50ce /home/nils/pspdev/psp/lib/libpthread.a@0x7152 /home/nils/pspdev/psp/lib/libpthread.a@0xb6ea /home/nils/pspdev/psp/lib/libpthread.a@0x1a346 /home/nils/pspdev/psp/lib/libpthread.a@0x1c242 /home/nils/pspdev/psp/lib/libpthread.a@0x2705a /home/nils/pspdev/psp/lib/libpthread.a@0x547ea /home/nils/pspdev/psp/lib/libpthread.a@0x5926a /home/nils/pspdev/psp/lib/libpthread.a@0x5cd5a /home/nils/pspdev/psp/lib/libpthread.a@0x5e836 /home/nils/pspdev/psp/lib/libpthread.a@0x68ace /home/nils/pspdev/psp/lib/libpthread.a@0x69ff2 /home/nils/pspdev/psp/lib/libpthread.a@0x6c55a /home/nils/pspdev/psp/lib/libpthread.a@0x3662 
+        /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -fresolution=/tmp/cc7vNKI1.res -flinker-output=exec /home/nils/pspdev/psp/lib/libpthread.a@0x609b2 /home/nils/pspdev/psp/lib/libpthread.a@0x62a3e /home/nils/pspdev/psp/lib/libpthread.a@0x64d26 /home/nils/pspdev/psp/lib/libpthread.a@0x667ca /home/nils/pspdev/psp/lib/libpthread.a@0x1aae /home/nils/pspdev/psp/lib/libpthread.a@0x50ce /home/nils/pspdev/psp/lib/libpthread.a@0x7152 /home/nils/pspdev/psp/lib/libpthread.a@0xb6ea /home/nils/pspdev/psp/lib/libpthread.a@0x1a346 /home/nils/pspdev/psp/lib/libpthread.a@0x1c242 /home/nils/pspdev/psp/lib/libpthread.a@0x2705a /home/nils/pspdev/psp/lib/libpthread.a@0x547ea /home/nils/pspdev/psp/lib/libpthread.a@0x5926a /home/nils/pspdev/psp/lib/libpthread.a@0x5cd5a /home/nils/pspdev/psp/lib/libpthread.a@0x5e836 /home/nils/pspdev/psp/lib/libpthread.a@0x68ace /home/nils/pspdev/psp/lib/libpthread.a@0x69ff2 /home/nils/pspdev/psp/lib/libpthread.a@0x6c55a /home/nils/pspdev/psp/lib/libpthread.a@0x3662 
+        /home/nils/pspdev/bin/psp-g++ @/tmp/ccOsFNAj
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccxoGhhm.ltrans.out' '-fwpa' '-fresolution=/tmp/cc7vNKI1.res' '-flinker-output=exec'
+         /home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/lto1 -G 0 -G 0 -quiet -dumpbase ./cmTC_b048d.wpa -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccxoGhhm.ltrans.out -fwpa -fresolution=/tmp/cc7vNKI1.res -flinker-output=exec @/tmp/cc3gUM4p
+        GNU GIMPLE (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccxoGhhm.ltrans.out' '-fwpa' '-fresolution=/tmp/cc7vNKI1.res' '-flinker-output=exec' '-dumpdir' './cmTC_b048d.wpa.'
+        /home/nils/pspdev/bin/psp-g++ @/tmp/ccdcsgkG
+        Using built-in specs.
+        COLLECT_GCC=/home/nils/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccxoGhhm.ltrans0.ltrans.o'
+         /home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/lto1 -G 0 -G 0 -quiet -dumpbase ./cmTC_b048d.ltrans0.ltrans -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccAK7uy4 -o /tmp/ccBdu5oA.s
+        GNU GIMPLE (GCC) version 13.2.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccxoGhhm.ltrans0.ltrans.o'
+         /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -G 0 -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccxoGhhm.ltrans0.ltrans.o /tmp/ccBdu5oA.s
+        COMPILER_PATH=/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-G' '0' '-mhard-float' '-msingle-float' '-O3' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccxoGhhm.ltrans0.ltrans.o' '-dumpdir' './cmTC_b048d.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_b048d' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_b048d.'
+        make[1]: Leaving directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/nils/pspdev/psp/sdk/include]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed]
+          add: [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/nils/pspdev/psp/sdk/include] ==> [/home/nils/pspdev/psp/sdk/include]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0] ==> [/home/nils/pspdev/psp/include/c++/13.2.0]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp] ==> [/home/nils/pspdev/psp/include/c++/13.2.0/psp]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward] ==> [/home/nils/pspdev/psp/include/c++/13.2.0/backward]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/include]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/include-fixed]
+        collapse include dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include] ==> [/home/nils/pspdev/psp/include]
+        implicit include dirs: [/home/nils/pspdev/psp/sdk/include;/home/nils/pspdev/psp/include/c++/13.2.0;/home/nils/pspdev/psp/include/c++/13.2.0/psp;/home/nils/pspdev/psp/include/c++/13.2.0/backward;/home/nils/pspdev/lib/gcc/psp/13.2.0/include;/home/nils/pspdev/lib/gcc/psp/13.2.0/include-fixed;/home/nils/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b048d/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b048d.dir/build.make CMakeFiles/cmTC_b048d.dir/build]
+        ignore line: [make[1]: Entering directory '/home/nils/github/psp/build/CMakeFiles/CMakeScratch/TryCompile-NGIUWh']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/nils/pspdev/bin/psp-g++ -DPSP -D__PSP__  -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0    -v -o CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/nils/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/']
+        ignore line: [ /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/cc1plus -quiet -v -I /home/nils/pspdev/psp/include -I /home/nils/pspdev/psp/sdk/include -iprefix /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/ -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D __PSP__ -D PSP /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -G 0 -quiet -dumpdir CMakeFiles/cmTC_b048d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccxr17Q4.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/bin/../lib/gcc/../../lib/gcc/psp/13.2.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/nils/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/nils/pspdev/psp/sdk/include]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/psp]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include/c++/13.2.0/backward]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/include-fixed]
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5c08700e7aef221271cc9e5f3cb00135]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/']
+        ignore line: [ /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/as -G 0 -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccxr17Q4.s]
+        ignore line: [COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '__PSP__' '-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-v' '-o' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b048d]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b048d.dir/link.txt --verbose=1]
+        ignore line: [/home/nils/pspdev/bin/psp-g++ -I/home/nils/pspdev/psp/include -I/home/nils/pspdev/psp/sdk/include -DPSP -G0  -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_b048d   -L/home/nils/pspdev/lib  -L/home/nils/pspdev/psp/lib  -L/home/nils/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/nils/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-cxx-flags=-G0 --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../libexec/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/:/home/nils/pspdev/bin/../lib/gcc/:/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/nils/pspdev/psp/include' '-I' '/home/nils/pspdev/psp/sdk/include' '-D' 'PSP' '-G' '0' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_b048d' '-L/home/nils/pspdev/lib' '-L/home/nils/pspdev/psp/lib' '-L/home/nils/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_b048d.']
+        link line: [ /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2 -plugin /home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so -plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7vNKI1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc -EL -G 0 -o cmTC_b048d /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/lib -L/home/nils/pspdev/psp/lib -L/home/nils/pspdev/psp/sdk/lib -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0 -L/home/nils/pspdev/bin/../lib/gcc -L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o /home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o]
+          arg [/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/nils/pspdev/bin/../libexec/gcc/psp/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc7vNKI1.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-G] ==> ignore
+          arg [0] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b048d] ==> ignore
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o]
+          arg [-L/home/nils/pspdev/lib] ==> dir [/home/nils/pspdev/lib]
+          arg [-L/home/nils/pspdev/psp/lib] ==> dir [/home/nils/pspdev/psp/lib]
+          arg [-L/home/nils/pspdev/psp/sdk/lib] ==> dir [/home/nils/pspdev/psp/sdk/lib]
+          arg [-L/home/nils/pspdev/lib] ==> dir [/home/nils/pspdev/lib]
+          arg [-L/home/nils/pspdev/psp/lib] ==> dir [/home/nils/pspdev/psp/lib]
+          arg [-L/home/nils/pspdev/psp/sdk/lib] ==> dir [/home/nils/pspdev/psp/sdk/lib]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0] ==> dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc] ==> dir [/home/nils/pspdev/bin/../lib/gcc]
+          arg [-L/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib] ==> dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_b048d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o]
+          arg [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o] ==> obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib/crt0.o] ==> [/home/nils/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crti.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crti.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtbegin.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtbegin.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtend.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtend.o]
+        collapse obj [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/crtn.o] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0/crtn.o]
+        collapse library dir [/home/nils/pspdev/lib] ==> [/home/nils/pspdev/lib]
+        collapse library dir [/home/nils/pspdev/psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        collapse library dir [/home/nils/pspdev/psp/sdk/lib] ==> [/home/nils/pspdev/psp/sdk/lib]
+        collapse library dir [/home/nils/pspdev/lib] ==> [/home/nils/pspdev/lib]
+        collapse library dir [/home/nils/pspdev/psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        collapse library dir [/home/nils/pspdev/psp/sdk/lib] ==> [/home/nils/pspdev/psp/sdk/lib]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0] ==> [/home/nils/pspdev/lib/gcc/psp/13.2.0]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc] ==> [/home/nils/pspdev/lib/gcc]
+        collapse library dir [/home/nils/pspdev/bin/../lib/gcc/psp/13.2.0/../../../../psp/lib] ==> [/home/nils/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/nils/pspdev/psp/lib/crt0.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crti.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtbegin.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtend.o;/home/nils/pspdev/lib/gcc/psp/13.2.0/crtn.o]
+        implicit dirs: [/home/nils/pspdev/lib;/home/nils/pspdev/psp/lib;/home/nils/pspdev/psp/sdk/lib;/home/nils/pspdev/lib/gcc/psp/13.2.0;/home/nils/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...
