@@ -1,5 +1,0 @@
-/home/nils/github/psp/build/CMakeFiles/edit_cache.dir
-/home/nils/github/psp/build/CMakeFiles/rebuild_cache.dir
-/home/nils/github/psp/build/src/CMakeFiles/Dev.dir
-/home/nils/github/psp/build/src/CMakeFiles/edit_cache.dir
-/home/nils/github/psp/build/src/CMakeFiles/rebuild_cache.dir
