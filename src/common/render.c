@@ -1,4 +1,4 @@
-#include "render.h"
+#include "common/render.h"
 
 #include <pspgu.h>
 #include <pspdisplay.h>

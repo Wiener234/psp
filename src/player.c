@@ -1,8 +1,8 @@
 #include "player.h"
 
 #include "enviorment.h"
-#include "render.h"
-#include "input.h"
+#include "common/render.h"
+#include "common/input.h"
 
 float player_x,player_y = 50;
 

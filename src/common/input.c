@@ -1,4 +1,4 @@
-#include "input.h"
+#include "common/input.h"
 #include <pspctrl.h>
 #include <math.h>
 

@@ -8,8 +8,8 @@
 #include <string.h>
 #include <pspgu.h>
 
-#include "input.h"
-#include "render.h"
+#include "common/input.h"
+#include "common/render.h"
 #include "player.h"
 #include "enviorment.h"
 
