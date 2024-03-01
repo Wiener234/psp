@@ -1,9 +1,16 @@
 #ifndef ENVIORMENT_H
 #define ENVIORMENT_H
 
+typedef struct enviorment {
+   float x;
+   float y;
+   float length;
+   float height;
+} Enviorment;
 
-extern int env_cords[][2];
+extern Enviorment enviorment[];
 extern int env_cords_len;
+
 
 void enviorment_update();
 
